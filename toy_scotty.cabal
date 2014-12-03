@@ -5,7 +5,7 @@ homepage: http://example.com/nothinghereyet
 build-type: Simple
 cabal-version: >=1.18
 
-executable todo
+executable toyscotty
   main-is: Main.hs
   -- other-modules:       
   build-depends:       base ==4.7.*
