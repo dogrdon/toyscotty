@@ -1,6 +1,6 @@
 {-# LANGUAGE OverloadedStrings #-}
 
-import Web.scotty
+import Web.Scotty
 
 main = scotty 3002 $ do
   get "/" $ do 
