@@ -10,11 +10,15 @@ import qualified Text.Blaze.Html5.Attributes as A
 import Text.Blaze.Html.Renderer.Text
 import Database.MongoDB
 
-import qualified Toyscotty.Views.Index
 blaze = S.html . renderHtml
 
 
 main = scotty 3002 $ do
   get "/" $ do 
-    blaze Toyscotty.Views.Index.render
-
+   	S.html . renderHtml $ do
+   	  body $ do
+       h1 "heres a thing"
+       ul $ do
+         li "this"
+         li "or that"
+    
